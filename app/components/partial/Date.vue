@@ -24,18 +24,26 @@ const zdt = computed(() => {
 	}
 })
 
-const relative = computed(() => props.absolute || !zdt.value
-	? false
-	: props.relative || today.since(zdt.value, { largestUnit: 'week' }).weeks < 1,
-)
+/** 标记是否已完成客户端水合，用于推迟依赖浏览器时区/Temporal.Now 的计算 */
+const isClient = ref(false)
 
-const mounted = ref(false)
-const tooltip = computed(() => mounted.value && zdt.value
+const relative = computed(() => {
+	if (!isClient.value) return false
+	if (props.absolute || !zdt.value) return false
+	return props.relative || today.since(zdt.value, { largestUnit: 'week' }).weeks < 1
+})
+
+const showYear = computed(() => {
+	if (!isClient.value) return true
+	return zdt.value ? zdt.value.year !== today.year : false
+})
+
+const tooltip = computed(() => isClient.value && zdt.value
 	? props.tipTransform(toZdtLocaleString(zdt.value, props.tipFormat))
 	: undefined,
 )
 
-onMounted(() => mounted.value = true)
+onMounted(() => isClient.value = true)
 </script>
 
 <template>
@@ -56,10 +64,9 @@ onMounted(() => mounted.value = true)
 		v-else
 		:datetime="toInstantString(zdt)"
 		:relative
-		:year="zdt.year === today.year ? undefined : '2-digit'"
+		:year="showYear ? '2-digit' : undefined"
 		month="long"
 		day="numeric"
-		numeric="auto"
 	/>
 
 </span>

@@ -27,7 +27,9 @@ const sidebarStore = useSidebarStore()
 		</template>
 	</nav>
 	<footer class="aside-footer">
-		<ZThemeToggle />
+		<ClientOnly>
+			<ZThemeToggle />
+		</ClientOnly>
 		<component :is="() => toValue(item)" v-for="(item, index) in appConfig.footer" :key="index" />
 	</footer>
 </aside>
