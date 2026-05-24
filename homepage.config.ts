@@ -17,7 +17,7 @@ const homepageConfig = {
 	language: 'zh-CN',
 	timeZone: 'Asia/Shanghai',
 	favicon: '/icon.png',
-	url: 'https://www.liqiang.info',
+	url: 'https://im.liqiang.info',
 	blogAtom: 'https://blog.liqiang.info/atom.xml',
 }
 
