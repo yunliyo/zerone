@@ -22,11 +22,6 @@ export default defineAppConfig({
 			link: 'https://www.cqc.edu.cn/',
 			text: '重庆城市管理职业大学',
 		},
-		{
-			img: 'https://sjtuguoxue.space/static/favicon.ico',
-			link: 'https://sjtuguoxue.space/',
-			text: '上海交大国学社',
-		},
 	],
 
 	nav: [
@@ -34,10 +29,10 @@ export default defineAppConfig({
 			title: '',
 			items: [
 				{ icon: 'ri:id-card-line', text: '简介', url: '/' },
-				{ icon: 'ri:quill-pen-line', text: '文章', url: '/article' },
 				{ icon: 'ri:code-line', text: '项目', url: '/project' },
 				{ icon: 'ri:planet-line', text: '站点', url: '/site' },
 				{ icon: 'ri:history-line', text: '日志', url: '/log' },
+				{ icon: 'ri:link-m', text: '友链', url: '/friends' },
 			],
 		},
 		{

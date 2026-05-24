@@ -54,7 +54,7 @@ const appConfig = useAppConfig()
 		<p>2015年10月10日，完成第一版<ZLink to="https://www.liqiang.info/">个人网站</ZLink>的开发。</p>
 	</ZField>
 
-	<ZField label="友情链接">
+	<ZField label="致敬">
 		<p><ZBadge v-for="item in appConfig.fork" :key="item.link" v-bind="item" /></p>
 	</ZField>
 </div>
