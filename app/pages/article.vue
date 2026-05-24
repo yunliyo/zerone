@@ -2,7 +2,7 @@
 useHead({ title: '文章' })
 definePageMeta({ headerText: '最近更新' })
 
-const { data, error, status } = useLazyFetch('/api/feed/blog')
+const { data, error, status } = await useFetch('/api/feed/blog')
 
 const articles = computed(() => data.value?.slice(0, 20) ?? [])
 </script>
