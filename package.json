@@ -1,0 +1,44 @@
+{
+  "name": "zerone-site",
+  "type": "module",
+  "version": "4.6.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "homepage": "https://github.com/yunliyo",
+  "scripts": {
+    "postinstall": "nuxt prepare",
+    "dev": "nuxt dev --open",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@nuxt/icon": "catalog:ui",
+    "@nuxt/image": "catalog:ui",
+    "@nuxtjs/color-mode": "catalog:ui",
+    "@nuxtjs/seo": "catalog:util",
+    "@pinia/nuxt": "catalog:util",
+    "@vueuse/core": "catalog:util",
+    "@vueuse/nuxt": "catalog:util",
+    "embla-carousel-autoplay": "catalog:ui",
+    "embla-carousel-vue": "catalog:ui",
+    "embla-carousel-wheel-gestures": "catalog:ui",
+    "fast-xml-parser": "catalog:util",
+    "nuxt": "catalog:framework",
+    "pinia": "catalog:framework",
+    "temporal-polyfill": "catalog:util",
+    "vue": "catalog:framework",
+    "vue-router": "catalog:framework",
+    "vue-tippy": "catalog:ui"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:quality",
+    "@zinkawaii/stylelint-config": "catalog:quality",
+    "eslint": "catalog:quality",
+    "sass-embedded": "catalog:framework",
+    "stylelint": "catalog:quality",
+    "typescript": "catalog:framework"
+  }
+}
