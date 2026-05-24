@@ -7,7 +7,6 @@ export default defineCachedEventHandler(async (_event) => {
 		cdataPropName: '$',
 		ignoreAttributes: false,
 		isArray: name => name === 'entry' || name === 'category',
-		parseTagValue: false,
 		textNodeName: '_',
 	})
 

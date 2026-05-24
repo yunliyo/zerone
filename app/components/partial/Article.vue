@@ -1,24 +1,20 @@
 <script setup lang="ts">
 import type FeedProps from '~/types/feed'
 
-const props = defineProps<FeedProps>()
-
-const isClient = ref(false)
-const showUpdated = computed(() => isClient.value && props.updated && isTimeDiffSignificant(props.updated, props.published))
-onMounted(() => isClient.value = true)
+defineProps<FeedProps>()
 </script>
 
 <template>
 <ZRawLink class="article-card" :to="link.$href || id">
 	<div class="article-header">
-		<ZDate v-if="showUpdated" class="article-date" :date="updated" />
+		<ZDate v-if="updated && isTimeDiffSignificant(updated, published)" class="article-date" :date="updated" />
 		<ZDate class="article-date" :date="published" />
 	</div>
 	<h2 class="article-title">
-		{{ typeof title === 'string' ? title : title._ ?? String(title) }}
+		{{ typeof title === 'string' ? title : title._ }}
 	</h2>
 	<p class="article-descrption">
-		{{ typeof summary === 'string' ? summary : summary._ ?? String(summary) }}
+		{{ typeof summary === 'string' ? summary : summary._ }}
 	</p>
 </ZRawLink>
 </template>
