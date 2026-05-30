@@ -17,7 +17,6 @@ export interface Friend {
 }
 
 const friends: Friend[] = [
-	{ name: '弹铗室主人', desc: '旧体诗人、易学爱好者', url: 'http://www.liubingzhe.com/', avatar: 'https://www.liubingzhe.com/images/me.jpg' },
 	{ name: '芋泥椰子冻', desc: '林雨夜，芋椰，椰椰', url: 'https://lyy0323.space/', avatar: 'https://lyy0323.space/writing/favicon.png' },
 	{ name: '缺月正西窗', desc: '只管此时拥抱，无须别后回眸。', url: 'https://www.52shici.com/space.php?mem_id=2146', avatar: 'https://www.52shici.com/upload/member/2146.jpg' },
 	{ name: '沐清公子', desc: '纵使千年铁门槛，终需一个土馒头', url: 'https://www.52shici.com/space.php?mem_id=30837', avatar: 'https://www.52shici.com/upload/member/30837.jpg' },
@@ -33,7 +32,6 @@ const friends: Friend[] = [
 	{ name: 'xiaoz', desc: '希望我的分享，能为你带来价值。', url: 'https://blog.xiaoz.org/', avatar: 'https://img.rss.ink/imgs/2024/03/29/9efff235952f170a.jpg' },
 	{ name: '维燕的数字花园', desc: 'BioIT 爱好者，沉淀生活，记录点滴。', url: 'https://shenwy.com/', avatar: 'https://shenwy.com/assets/logo.png' },
 	{ name: 'Blokura', desc: '一个对二次元和电子科技感兴趣的咸鱼', url: 'https://www.caixiaojing.com/', avatar: 'https://q2.qlogo.cn/headimg_dl?dst_uin=2913434936&spec=640' },
-	{ name: 'IDO老徐', desc: '公众号<IDO老徐>', url: 'http://istester.com/', avatar: 'http://istester.com/file.php?f=202103/f_39a5bd3eb49b5cc1a623606b11932123&t=png&o=&s=&v=1615055302' },
 	{ name: '云游君', desc: '希望能成为一个有趣的人', url: 'https://www.yunyoujun.cn', avatar: 'https://www.yunyoujun.cn/images/avatar.jpg' },
 	{ name: '麋鹿鲁哟', desc: '大道至简，知易行难。', url: 'https://miluluyo.github.io/vdoingBlog', avatar: 'https://miluluyo.github.io/vdoingBlog/img/tx.jpg' },
 	{ name: "Evan's blog", desc: 'web前端小学生', url: 'https://xugaoyi.com/', avatar: 'https://xugaoyi.com/img/logo.png' },
