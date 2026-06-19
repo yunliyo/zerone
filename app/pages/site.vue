@@ -7,14 +7,13 @@ definePageMeta({ headerText: '一些网站' })
 
 const toolSites: Array<CardProps> = [
 	{
-		name: '个人网站',
+		name: '个人网站（已归档）',
 		nameAlt: '风月一闲人',
 		buttons: [
-			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://www.liqiang.info/' },
-			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo' },
+			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo/yunli-old' },
 		],
 		desc: [
-			'第一版个人网站，模仿',
+			'留作纪念，第一版个人网站，模仿',
 			h(ZLink, { to: 'https://linktr.ee', text: 'linktree' }),
 			'设计风格，使用原生 HTML + CSS + JS 实现，内置博客功能。',
 		],
@@ -27,39 +26,43 @@ const toolSites: Array<CardProps> = [
 		],
 		desc: '使用 Nuxt Content 开发的个人博客。',
 	},{
+		name: '个人简历',
+		nameAlt: '在线简历',
+		buttons: [
+			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://resume.liqiang.info/' },
+			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo/yunli-cv' },
+		],
+		desc: '使用 Nuxt 开发的个人简历，可按下 Ctrl + P 打印。',
+	},{
+		name: 'Linux 命令大全',
+		nameAlt: '备忘清单',
+		buttons: [
+		{ icon: 'ph:planet-duotone', text: '访问', to: 'https://linux.liqiang.info/' },
+		{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo/linux-command' },
+		],
+		desc: 'Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。',
+	},{
+		name: '雪山诗派',
+		nameAlt: '诗社',
+		buttons: [
+			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/snow-mountain-org' },
+		],
+		desc: '成立于 2013 年 10 月 1 日，宗旨是“精神自由，追求极致”、“雪山千古冷，独照峨眉峰。',
+	},{
 		name: '狸庐',
-		nameAlt: '',
+		nameAlt: '文化工作室',
 		buttons: [
-			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://www.liqiang.info/docs/notepad/' },
-			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo' },
+			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/cat-hut' },
 		],
-		desc: '使用 Docsify 搭建的文档网站。',
+		desc: '始创于 2018 年 7 月，是由独立开发者韵狸打造的诗意平台，致力于提升全民诗词创作水平；同时也是一家致力于推动企业数字化转型的创新型科技工作室。',
 	},{
-		name: '狸庵',
-		nameAlt: '',
+		name: '平仄云（原零一云）',
+		nameAlt: '科技工作室',
 		buttons: [
-			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://www.liqiang.info/docs/notepad+/' },
-			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo' },
+			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/zeronerhyme-cloud' },
 		],
-		desc: '使用 DocuteV3 搭建的文档网站。',
-	},{
-		name: '狸寮',
-		nameAlt: '',
-		buttons: [
-			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://www.liqiang.info/docs/notepad++/' },
-			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo' },
-		],
-		desc: '使用 DocuteV4 搭建的文档网站。',
-	},{
-		name: '狸廑',
-		nameAlt: '',
-		buttons: [
-			{ icon: 'ph:planet-duotone', text: '访问', to: 'https://www.liqiang.info/page/' },
-			{ icon: 'ph:github-logo-duotone', text: 'GitHub', to: 'https://github.com/yunliyo' },
-		],
-		desc: '使用 Markdown 转 HTML 工具搭建的原生 HTML 博客。',
+		desc: '始创于 2018 年 7 月，是由独立开发者韵狸打造的诗意平台，致力于提升全民诗词创作水平；同时也是一家致力于推动企业数字化转型的创新型科技工作室。',
 	},
-
 ]
 </script>
 
