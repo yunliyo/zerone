@@ -30,7 +30,6 @@ export default defineAppConfig({
 			items: [
 				{ icon: 'ri:id-card-line', text: '简介', url: '/' },
 				{ icon: 'ph:linktree-logo', text: '链树', url: '/links' },
-				{ icon: 'ph:article', text: '文章', url: '/articles' },
 				{ icon: 'ri:code-line', text: '项目', url: '/project' },
 				{ icon: 'ri:planet-line', text: '站点', url: '/site' },
 				{ icon: 'ri:history-line', text: '日志', url: '/log' },

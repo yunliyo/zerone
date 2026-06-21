@@ -32,7 +32,6 @@ const linkButtons: LinkItem[] = [
   { text: '简历', url: 'https://resume.liqiang.info', icon: 'ph:briefcase', desc: '我的个人简历' },
   { text: 'Linux命令大全', url: 'https://linux.liqiang.info', icon: 'ri:terminal-line', desc: 'Linux命令手册' },
   { text: '犹为君', url: 'https://boe.icu', icon: 'ph:planet', desc: '让我们生活的世界充满诗意' },
-  { text: '猶為君國際', url: 'https://www.boe.icu', icon: 'ph:planet-fill', desc: '讓我們生活的世界充滿詩意 ' },
   { text: '赞助支持', icon: 'ri:hand-heart-line', desc: '感谢你的支持', qr: '/donate.png' },
 ]
 </script>
