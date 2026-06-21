@@ -2,9 +2,12 @@
 useHead({ title: '文章' })
 definePageMeta({ headerText: '最近更新' })
 
-const { data, error, status } = useLazyFetch('/api/feed/blog')
+const { data, error, status } = await useFetch('/api/feed/blog', {
+	key: 'feed-blog',
+	transform: (entries) => Array.isArray(entries) ? entries.slice(0, 12) : [],
+})
 
-const articles = computed(() => data.value.slice(0, 12))
+const articles = computed(() => data.value ?? [])
 </script>
 
 <template>

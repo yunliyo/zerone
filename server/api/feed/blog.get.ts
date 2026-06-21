@@ -1,7 +1,7 @@
 import { XMLParser } from 'fast-xml-parser'
 import homepageConfig from '~~/homepage.config'
 
-export default defineCachedEventHandler(async (_event) => {
+export default defineEventHandler(async (_event) => {
 	const parser = new XMLParser({
 		attributeNamePrefix: '$',
 		cdataPropName: '$',
@@ -12,8 +12,20 @@ export default defineCachedEventHandler(async (_event) => {
 
 	const resp = await fetch(homepageConfig.blogAtom)
 
+	if (!resp.ok) {
+		throw createError({
+			statusCode: resp.status,
+			statusMessage: `Failed to fetch blog feed: ${resp.statusText}`,
+		})
+	}
+
 	const objAtom = parser.parse(await resp.text())
-	return objAtom.feed?.entry
-}, {
-	maxAge: 60 * 60 * 24,
+	
+	const entries = objAtom.feed?.entry
+	
+	if (!entries || !Array.isArray(entries)) {
+		return []
+	}
+	
+	return entries
 })
