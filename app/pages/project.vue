@@ -21,7 +21,7 @@ const projects = [
 		github: 'yunliyo/yunli-homepage',
 		description: '使用 Solid.js, UnoCSS, Vite 构建的极简现代简约个人主页.',
 	},{
-		title: 'yunli-homepageV3',
+		title: 'yunli-homepageV3(Private)',
 		github: 'yunliyo/yunli',
 		description: '基于 Nuxt.js 开发的链接聚合（link in bio/linktree）主页。',
 	},{
