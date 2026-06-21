@@ -10,7 +10,12 @@ export default defineEventHandler(async (_event) => {
 		textNodeName: '_',
 	})
 
-	const resp = await fetch(homepageConfig.blogAtom)
+	const resp = await fetch(homepageConfig.blogAtom, {
+		headers: {
+			'User-Agent': 'Mozilla/5.0 (compatible; YunliBot/1.0; +https://liqiang.info)',
+			'Accept': 'application/atom+xml, application/xml, text/xml, */*',
+		},
+	})
 
 	if (!resp.ok) {
 		throw createError({
