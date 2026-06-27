@@ -28,11 +28,8 @@ const socialLinks: LinkItem[] = [
 ]
 
 const linkButtons: LinkItem[] = [
-  { text: 'X', url: 'https://x.com/yunliyo', icon: 'iconoir:x', desc: 'X 主页' },
   { text: 'TikTok', url: 'https://www.tiktok.com/@coder_yunli', icon: 'line-md:tiktok', desc: 'TikTok 主页' },
-  { text: 'Lemon8', url: 'https://www.lemon8-app.com/@coder_yunli', icon: 'fa6-solid:lemon', desc: 'Lemon8 主页' },
   { text: '抖音', url: 'https://www.douyin.com/user/MS4wLjABAAAAfF-GZzLaqZkjk0TroC1xheJkw0OooXcJImbUCqAwd49YzhFklsn1n7Mo6PJtPmKJ', icon: 'line-md:tiktok', desc: '抖音主页' },
-  { text: 'bilibili', url: 'https://space.bilibili.com/9976765', icon: 'ri:bilibili-fill', desc: 'bilibili 主页' },
   { text: '博客', url: 'https://blog.liqiang.info', icon: 'ri:file-list-3-line', desc: '记录技术与生活' },
   { text: '简历', url: 'https://resume.liqiang.info', icon: 'ph:briefcase', desc: '我的个人简历' },
   { text: 'Linux命令大全', url: 'https://linux.liqiang.info', icon: 'ri:terminal-line', desc: 'Linux命令手册' },
