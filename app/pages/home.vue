@@ -50,7 +50,7 @@ const appConfig = useAppConfig()
 
 	<ZField label="近期活动">
 		<p>2026年3月，使用 Nuxt Content 重构了<ZLink to="https://blog.liqiang.info/">个人博客</ZLink>。</p>
-		<p>2018年专科毕业于<ZLink to="https://www.cqc.edu.cn/">重庆城市管理职业大学</ZLink>物联网应用技术专业，辅修现代殡葬技术与管理专业，曾在京东方和华为担任技术文档工程师，现为自由职业，以 Web3 交易和证券交易为生计。</p>
+		<p>2018年专科毕业于<ZLink to="https://www.cqc.edu.cn/">重庆城市管理职业大学</ZLink>物联网应用技术专业，辅修现代殡葬技术与管理专业，曾在京东方和华为担任技术文档工程师，现为自由职业，以内容创作和开源软件项目贡献为生计，以 Web3 交易和证券交易为副业。</p>
 		<p>2015年10月10日，使用原生 HTML + CSS + JavaScript 技术栈，模仿 linktr.ee 设计风格，完成第一版<ZLink to="https://github.com/yunliyo/yunli-old">个人网站</ZLink>的开发。</p>
 	</ZField>
 
