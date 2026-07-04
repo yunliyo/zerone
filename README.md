@@ -4,6 +4,10 @@
 
 > *感谢开源项目 [L33Z22L11/homepage-v5](https://github.com/L33Z22L11/homepage-v5)*
 
+## 预览图
+
+![预览图](./preview.png)
+
 ## 快速开始
 
 ### 安装依赖
